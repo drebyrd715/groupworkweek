@@ -223,3 +223,167 @@ myArray.splice(4,1)
 // Reverse this array using Array.prototype.reverse(). Did you mutate the array? What does mutate mean? Did the .reverse()method return anything?
 myArray.reverse()
 // console.log(myArray)
+
+///////////////
+// BIGGIE SMALLS
+//////////////
+// Create a variable that contains an integer.
+// Write an if ... elsestatement that:
+// console.log()s "little number" if the number is entered is less than 100
+// console.log()s big numberif the number is greater than or equal to 100.
+// let num = 101
+// if (num < 100 ) {
+//     console.log("little number")
+// } else {
+//     console.log("big number")
+// }
+// console.log(num)
+
+////////////////
+// Monkey IN THE MIDDLE
+///////////////
+// Write an if ... else if ... elsestatement:
+// console.log()little numberif the number entered is less than 5.
+// If the number entered is more than 10, log big number.
+// Otherwise, log "monkey".
+// let num = 6
+// if (num < 5 ) {
+//     console.log("little number")
+// } else if (num > 10)
+//     console.log("big number")
+//  else {
+//     console.log("monkey")
+// }
+// console.log(num)
+
+///////////
+// WHATS'S IN YOUR CLOSET
+//////////
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+//   console.log("kristyn is rocking that " + kristynsCloset[2] + " today") 
+kristynsCloset.splice(6,0, "raybans")
+// console.log(kristynsCloset)
+kristynsCloset[5] = "stained knit hat";
+//  console.log(kristynsCloset)
+let thomsShirt = thomsCloset[0][0];
+  let thomsPants = thomsCloset[1][0];
+  let thomsAccessory = thomsCloset[2][1];
+ // console.log(`Thom is looking fierce in a ${thomsShirt}, ${thomsPants}, and ${thomsAccessory}!`);
+ thomsCloset[1][2] = "Footie Pajamas";
+// console.log(thomsCloset[1][2]);
+// console.log(thomsCloset)
+
+//////////////
+// FUNCTIONS
+/////////////
+function printGreeting(name) {
+    return "Hello there, " + (name);
+  }
+//   const greeting = printGreeting("Slimer");
+//   console.log(greeting)
+
+function printCool(name) {
+    return `${name} is cool`;
+  }
+  const greeting = printCool("Captain Reynolds");
+//   console.log(greeting);
+
+function calculateCube(sideLength) {
+    const volume = Math.pow(sideLength, 3);
+    // console.log(`The volume of a cube with a side length of ${sideLength} is ${volume}`);
+  }
+  
+  calculateCube(7);
+
+function isCharAVowel (char) {
+ 
+    if (char === 'a'&&'e'&&'i'&&'o'&&'u') {
+        return "The character is a Vowel";
+    }
+    else {
+    return "The character is not a vowel";
+    }
+}
+// console.log (isCharAVowel ("r"));
+
+// function getTwoLengths(food1, food2){
+//     let length1 = food1.length
+//     let length2 = food2.length
+//     return [length1, length2]
+// }
+//  const lengths = getTwoLengths("pizza", "hamburgers")
+// console.log(lengths)
+
+// function getMultpleLengths(food1, food2, food3, food4, food5){
+//     let length1 = food1.length
+//     let length2 = food2.length
+//     let length3 = food3.length
+//     let length4 = food4.length
+//     let length5 = food5.length
+//     return [length1, length2, length3, length4, length5]
+// }
+//  const lengths = getMultpleLengths("pizza", "hamburgers", "fries", "ice cream", "spaghetti")
+// console.log(lengths)
+
+// function maxOfthree(x, y, z) {
+//     if (x >= y && x >= z) {
+//       return x;
+//     } else if ( y >= x && y >= z) {
+//       return y;
+//     }  else {
+//         return z;
+//     }
+//       }
+  
+//   console.log(maxOfthree(3, 56, 6));
+
+
+function findLongestWord(wordArray) {
+    if (wordArray.length === 0) {
+      return 'Nothing';
+    }  //Edge case
+  
+    let longestWord = wordArray[0];
+    for (let i = 1; i < wordArray.length; i++) {
+      if (wordArray[i].length > longestWord.length) {
+        longestWord = wordArray[i];
+      }
+    }
+  
+    return longestWord;
+  }
+  
+  const words = ['Pizza', 'balloon', 'Mississippi'];
+  const longest = findLongestWord(words);
+//   console.log(longest); 
+
