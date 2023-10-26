@@ -69,16 +69,13 @@ const e = 'Kevin';
 // Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
 // Commit
 
-// let animal = "";
-// if (animal = "cow"){
+// let animal = "dog";
+// if (animal === "cow"){
 // 	console.log("mooooo");
 // } else {
-// 	console.log("Hey! You're not a cow."); /// NEED WORK STILL
+// 	console.log("Hey! You're not a cow."); 
 // }
-// animal = "cow";
-// animal = "dog";            
-// console.log("cow")
-
+       
 ///////////////////////
 // DRIVERS ED
 //////////////////////
@@ -139,11 +136,11 @@ const e = 'Kevin';
 //////////////////
 //For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five
 // for (let i = 1; i <= 100; i++){
-//     if (i % 5 == 0)
-        // console.log("i found a " + i + " High Five !");
-//    else if (i % 3 == 0) console.log("three is a crowd"); ///// NEEDS WORK
+//     if (i % 5 === 0)
+//         console.log("i found a " + i + " High Five !");
+//    else if (i % 3 === 0) console.log("three is a crowd");
 //    else console.log(i); 
-//}
+// }
 
 ////////////////////////
 // SAVINGS ACCOUNT
