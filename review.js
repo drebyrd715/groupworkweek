@@ -18,9 +18,9 @@
 // 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
     // maybe about 85%
 
-//////////////////////////////
+//////////////////////////////////////////////////
 // STRINGS
-/////////////////////////////
+//////////////////////////////////////////////////
 
 // 1. Create a variable called firstVariable
 // 2. Assign it the value of the string "Hello World"
@@ -41,9 +41,9 @@ let finalwords = (firstVariable +  secondVariable +  yourName)
 // console.log(secondVariable)
 // console.log(finalwords)
 
-//////////////////////
+///////////////////////////////////////
 // Booleans
-/////////////////////
+//////////////////////////////////////
 const a = 4;
 const b = 53;
 const c = 57;
@@ -62,8 +62,9 @@ const e = 'Kevin';
 // console.log(a >= a <= d); // note: the answer is a simple arithmetic equation, not something "weird"
 // console.log(48 >='48');
 
-////////////////////////////
+////////////////////////////////////////
 // THE FARM
+////////////////////////////////////////
 // Declare a variable animal. Set it to be either "cow" or something else
 // Write code that will print out "mooooo" if the it is equal to cow
 // Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
@@ -76,9 +77,9 @@ const e = 'Kevin';
 // 	console.log("Hey! You're not a cow."); 
 // }
        
-///////////////////////
+///////////////////////////////////////
 // DRIVERS ED
-//////////////////////
+///////////////////////////////////////
 // 1. Make a variable that holds a person's age; be semantic
 // 2. Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
 
@@ -91,9 +92,9 @@ const e = 'Kevin';
 //     console.log("Sorry you're too young!");
 // }
 
-//////////////////
+/////////////////////////////////////
 // LOOPS
-/////////////////
+/////////////////////////////////////
 // 1. Write a loop that will print out all the numbers from 0 to 10, inclusive
 // 2. Write a loop that will print out all the numbers from 10 up to and including 400
 // 3. Write a loop that will print out every third number starting with 12 and going no higher than 4000
@@ -112,9 +113,9 @@ const e = 'Kevin';
 //     }
 // }
 
-////////////////////
+///////////////////////////////////////////
 // GET EVEN
-///////////////////
+///////////////////////////////////////////
 // 1. Print out the numbers that are within the range of 1 - 100
 // 2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number"
 
@@ -131,9 +132,9 @@ const e = 'Kevin';
 // }
 // }
 
-///////////////////
+////////////////////////////////////////
 // GIVE ME FIVE
-//////////////////
+////////////////////////////////////////
 //For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five
 // for (let i = 1; i <= 100; i++){
 //     if (i % 5 === 0)
@@ -142,15 +143,6 @@ const e = 'Kevin';
 //    else console.log(i); 
 // }
 
-////////////////////////
-// SAVINGS ACCOUNT
-///////////////////////
-// 1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
-// 2. Check your work! Your bank_account should have $55 in it.
-// You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
-// Check your work! Your bank_account should have $10,100 in it.
-
-/////////////////////////
 // SAVINGS ACCOUNT
 ////////////////////////
 // 1.Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
@@ -158,16 +150,22 @@ const e = 'Kevin';
 // You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
 // Check your work! Your bank_account should have $10,100 in it.
 
-// let bank_account = 
-//     let total = 0;
-//       for(let i = 0; i <= 10; i++){  ////// NEEDS WORK
-//         total += i;
-//       }
-//       console.log(total)
+let bank_account = 0
+    for(let i = 0; i <= 10; i++){  
+      bank_account += i;
+  }
+    //  console.log(bank_account)
 
-////////////////////
+    let bank_account2 = 0
+    for(let i = 0; i <= 100; i++){  
+      bank_account2 += i;
+    } 
+    bank_account2 *= 2;
+    // console.log(bank_account2)
+
+///////////////////////////////////////////////////////////
 // ARRAYS & CONTROL FLOW
-///////////////////
+///////////////////////////////////////////////////////////
 // 1. What are the things in an array called?
 // elements
 // 2. Do Arrays guarantee those things will be in order?
@@ -175,12 +173,16 @@ const e = 'Kevin';
 // 3. What real-life thing could you model with an array?
 //    a carton of eggs
 
-//// Easy Does It /////
+////////////////////////////////////////////////
+//// Easy Does It 
+////////////////////////////////////////////////
 // Create an array that contains three quotes and store it in a variable called quotes
 //  let quotes = ["Sia Collection", "Humble", "Nike"]
 //  console.log(quotes)
 
-////// Accessing elements //////
+////////////////////////////////////////
+// Accessing elements
+////////////////////////////////////////
 // Given the following array 
 const randomThings = [1, 10, "Hello", true]
 // How do you access the 1st element in the array?
@@ -190,7 +192,9 @@ randomThings.splice(2,2, "world")
 // Check the value of the array to make sure it updated the array. How? Why, yes! console.log();
 // console.log(randomThings)
 
+/////////////////////////////////////////
 ///// Change values
+/////////////////////////////////////////
 // Given the following array 
 const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 // What would you write to access the 3rd element of the array?
@@ -202,7 +206,9 @@ ourClass.splice(4,4, "octocat")
 ourClass.unshift("cloud city")
 // console.log(ourClass)
 
-///////MIX IT UP
+///////////////////////////////////////////
+// MIX IT UP
+///////////////////////////////////////////
 // Given the following
  const myArray = [5, 10, 500, 20]
 // Add the string "Aegon"to the end of the array. Add another string of your choice to the end of the array.
@@ -221,9 +227,9 @@ myArray.splice(4,1)
 myArray.reverse()
 // console.log(myArray)
 
-///////////////
+///////////////////////////////
 // BIGGIE SMALLS
-//////////////
+///////////////////////////////
 // Create a variable that contains an integer.
 // Write an if ... elsestatement that:
 // console.log()s "little number" if the number is entered is less than 100
@@ -236,9 +242,9 @@ myArray.reverse()
 // }
 // console.log(num)
 
-////////////////
-// Monkey IN THE MIDDLE
-///////////////
+////////////////////////////////////
+// MONKEY IN THE MIDDLE
+////////////////////////////////////
 // Write an if ... else if ... elsestatement:
 // console.log()little numberif the number entered is less than 5.
 // If the number entered is more than 10, log big number.
@@ -253,9 +259,9 @@ myArray.reverse()
 // }
 // console.log(num)
 
-///////////
+/////////////////////////////////
 // WHATS'S IN YOUR CLOSET
-//////////
+/////////////////////////////////
 const kristynsCloset = [
     "left shoe",
     "cowboy boots",
@@ -300,9 +306,9 @@ let thomsShirt = thomsCloset[0][0];
 // console.log(thomsCloset[1][2]);
 // console.log(thomsCloset)
 
-//////////////
+/////////////////////////////////
 // FUNCTIONS
-/////////////
+/////////////////////////////////
 function printGreeting(name) {
     return "Hello there, " + (name);
   }
@@ -384,9 +390,9 @@ function findLongestWord(wordArray) {
   const longest = findLongestWord(words);
 //   console.log(longest); 
 
-////////////
+/////////////////////////////////////
 // OBJECTS
-///////////
+/////////////////////////////////////
 
 const user = {
     name: "Deandre",
@@ -420,9 +426,9 @@ user.friend.age = 32
 user.friend.purchased.push("The One Ring", "A latte")
 // console.log(user.friend.purchased[1])
 
-////////////////
+///////////////////////////////
 // LOOPS
-///////////////
+///////////////////////////////
 for(let i = 0; i < user.purchased.length; i++ ){
     // console.log(user.purchased[i])
 }
@@ -434,7 +440,7 @@ for(let i = 0; i < user.friend.purchased.length; i++){
 //  Write a single function updateUser that takes no parameters. When the function is run, it should:
 //  it should increment the user's age by 1
 //  make the user's name uppercase
-//  The function does not need a returnstatement, it will merely modify the user object.
+//  The function does not need a return statement, it will merely modify the user object.
 //  Write a function oldAndLoudthat performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our userobject, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoudfunction with useras the argument.
  function updateUser(){
     user.age++;
@@ -445,3 +451,10 @@ for(let i = 0; i < user.friend.purchased.length; i++){
     // console.log(user.name);
     // console.log(user.age);
 
+    function oldAndLoud(person){
+        user.age++;
+        user.name.toUpperCase();
+    }
+        oldAndLoud();
+        // console.log(user.name)
+        // console.log(user.age)    
