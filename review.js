@@ -384,3 +384,64 @@ function findLongestWord(wordArray) {
   const longest = findLongestWord(words);
 //   console.log(longest); 
 
+////////////
+// OBJECTS
+///////////
+
+const user = {
+    name: "Deandre",
+    email: "drebyrd1",
+    age: 25,
+    purchased: []
+}
+// console.log(user)
+user.email = "drebyrd2"
+// console.log(user)
+ user.age = 29
+// console.log(user) 
+user.location = "pittsburgh"
+// console.log(user)
+user.purchased.push("carbohyrdates")
+user.purchased.push("peace of mind")
+user.purchased.push("Merino jodhpurs")
+// console.log(user)
+// console.log(user.purchased[2])
+user.friend = {
+    name: "Alexis",
+    age: 27,
+    purchased: []
+}
+// console.log(user)
+// console.log(user.friend.name)
+user.friend.location = "baltimore"
+// console.log(user.friend.location)
+user.friend.age = 32
+// console.log(user.friend.age)
+user.friend.purchased.push("The One Ring", "A latte")
+// console.log(user.friend.purchased[1])
+
+////////////////
+// LOOPS
+///////////////
+for(let i = 0; i < user.purchased.length; i++ ){
+    // console.log(user.purchased[i])
+}
+for(let i = 0; i < user.friend.purchased.length; i++){
+    // console.log(user.friend.purchased[i])
+ }
+
+ ////Functions can operate on objects
+//  Write a single function updateUser that takes no parameters. When the function is run, it should:
+//  it should increment the user's age by 1
+//  make the user's name uppercase
+//  The function does not need a returnstatement, it will merely modify the user object.
+//  Write a function oldAndLoudthat performs the exact same tasks as updateUser, but instead of hard-coding it to only work on our userobject, make it take a parameter person, and have it modify the object that is passed in as an argument when the function is called. Call your oldAndLoudfunction with useras the argument.
+ function updateUser(){
+    user.age++;
+    user.name =
+    user.name.toUpperCase()     
+    }
+    updateUser();
+    // console.log(user.name);
+    // console.log(user.age);
+
